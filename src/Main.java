@@ -9,8 +9,7 @@ public class Main {
             System.out.println(kreditkarte.getTyp());
             System.out.println(kreditkarte.getVerfuegungsrahmen());
             System.out.println(kreditkarte.getGeheimzahl());
-            kreditkarte.geheimzahlAnzeigen();
-            kreditkarte.verfuegungsRahmenAnzeigen();
+            System.out.println(kreditkarte.getKreditkartennummer());
         }
 
     }
