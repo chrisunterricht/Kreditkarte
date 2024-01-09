@@ -18,5 +18,6 @@ public abstract class Kunde {
         this.name = name;
     }
 
+    public abstract String getType();
 
 }

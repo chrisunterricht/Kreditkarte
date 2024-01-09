@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        PrivatKunde k = new PrivatKunde("Horst", "Müller");
+        Kunde k = new PrivatKunde("Horst", "Müller");
         Konto ko = new Konto(k);
+        System.out.println(ko.getType());
         ko.addKreditkarte();
         ko.addKreditkarte();
         System.out.printf("Zum Konto mit der Kontonummer %d von %s %s gehören die folgenden Kreditkarten:%n",

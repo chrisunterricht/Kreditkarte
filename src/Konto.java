@@ -8,12 +8,19 @@ public class Konto {
     private List<Kreditkarte> karten = new ArrayList<>();
     private int kontonummer;
 
+    public String getType() {
+        return type;
+    }
+
+    private final String type;
+
     // Verwendung von Arraylist
     public Konto(Kunde kunde){
         Random r = new Random();
         this.kontonummer = r.nextInt(900) + 100;
         this.kunde = kunde;
         karten.add(new Kreditkarte());
+        this.type = kunde.getType();
     }
 
     public void removeKreditkarte(Kreditkarte k){

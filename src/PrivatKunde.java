@@ -12,4 +12,10 @@ public class PrivatKunde extends Kunde{
     public void setVorname(String vorname) {
         this.vorname = vorname;
     }
+
+
+    @Override
+    public String getType() {
+        return "Privat";
+    }
 }
